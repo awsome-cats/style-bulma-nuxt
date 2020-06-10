@@ -180,7 +180,7 @@
         <!--card image end-->
         <!--card content start-->
         <div class="card-content">
-          <div class="media-content has-text-cnetered">
+          <div class="media-content has-text-centered">
             <p class="subtitle is-6">
               マグロの缶詰
             </p>
