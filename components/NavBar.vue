@@ -8,7 +8,7 @@
         </p>
       </nuxt-link>
 
-      <div class="navbar-burger burger">
+      <div class="navbar-burger burger" data-target="top-mene">
         <span />
         <span />
         <span />
@@ -22,7 +22,7 @@
           Home
         </nuxt-link>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a href="#" class="navbar-link is-active">Admin</a>
+          <a href="#" class="navbar-link ">Admin</a>
           <div class="navbar-dropdown">
             <nuxt-link class="navbar-item" to="/admin/product-list">
               プロダクト
@@ -41,11 +41,26 @@
           </div>
         </div>
       </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a href="#" class="navbar-link ">カラム</a>
+        <div class="navbar-dropdown">
+          <nuxt-link to="/columns/columns">
+            カラム
+          </nuxt-link>
+          <nuxt-link to="/hero">
+            Hero
+          </nuxt-link>
+        </div>
+      </div>
       <!-- navbar start end -->
       <!-- navbar end start -->
+      <!--
+        is-active: 濃い色で表す
+        has-dropdown/is-hoverable: 組み合わせがいい
+      -->
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
-          <a href="#" class="navbar-link is-active">
+          <a href="#" class="navbar-link">
             こんにちは、user さん
           </a>
           <div class="navbar-dropdown">
@@ -97,6 +112,13 @@
 
 <script>
 export default {
+  data () {
+    return {
+
+    }
+  },
+  methods: {
+  }
 
 }
 </script>
